@@ -1,0 +1,71 @@
+:root {
+    --primary-pink: #EC4899;
+    --primary-purple: #A855F7;
+    --primary-orange: #F28C33;
+    --bg-cream: #F9F4EE;
+    --white: #ffffff;
+    --text-dark: #333333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-cream);
+    margin: 0;
+    color: var(--text-dark);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 5%; background: var(--white);
+    position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.logo-area span { font-weight: 700; color: var(--text-dark); }
+.nav-links a { text-decoration: none; margin: 0 15px; color: #666; font-weight: 600; }
+.nav-links a.active { color: var(--primary-purple); }
+
+/* HERO */
+.hero { text-align: center; padding: 80px 10%; background: white; }
+.main-title { font-size: 3rem; color: var(--primary-pink); margin-bottom: 0; }
+.sub-title { font-size: 1.8rem; margin-top: 5px; color: var(--text-dark); }
+.btn-pink { 
+    background: linear-gradient(90deg, var(--primary-purple), var(--primary-pink));
+    color: white; border: none; padding: 15px 30px; border-radius: 30px; 
+    font-weight: 700; cursor: pointer; margin: 10px;
+}
+.btn-outline {
+    background: transparent; border: 2px solid var(--primary-purple);
+    color: var(--primary-purple); padding: 13px 30px; border-radius: 30px; font-weight: 700;
+}
+
+/* STATS */
+.stats { display: flex; justify-content: center; gap: 30px; margin-top: -40px; }
+.stat-item { background: white; padding: 20px 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
+.stat-item h3 { margin: 0; font-size: 1.5rem; color: var(--text-dark); }
+
+/* GAMIFICATION */
+.level-card { background: white; margin: 50px 10%; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.level-header { display: flex; justify-content: space-between; font-weight: 700; }
+.progress-bar { background: #eee; height: 12px; border-radius: 10px; margin: 15px 0; overflow: hidden; }
+.progress-fill { background: linear-gradient(90deg, var(--primary-orange), var(--primary-pink)); width: 62%; height: 100%; }
+.mini-stats { display: flex; justify-content: space-around; text-align: center; margin: 20px 0; }
+.badges { text-align: center; font-size: 2rem; }
+
+/* MECLİSLER GRID */
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding: 20px 10%; }
+.card { background: white; padding: 25px; border-radius: 20px; text-align: center; border-bottom: 5px solid transparent; transition: 0.3s; }
+.card:hover { transform: translateY(-5px); }
+.c-pink { border-bottom-color: var(--primary-pink); }
+.c-blue { border-bottom-color: #0EA5E9; }
+.c-orange { border-bottom-color: var(--primary-orange); }
+.c-purple { border-bottom-color: var(--primary-purple); }
+.emoji { font-size: 3rem; display: block; margin-bottom: 10px; }
+
+/* BANNER */
+.banner-gradient { 
+    background: linear-gradient(90deg, #A855F7, #EC4899); 
+    color: white; padding: 60px 10%; text-align: center; border-radius: 20px; margin: 50px 10%;
+}
+.banner-items { display: flex; justify-content: space-around; margin-top: 30px; }
+
+.footer { text-align: center; padding: 40px; color: #888; }
