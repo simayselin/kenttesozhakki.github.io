@@ -1,1 +1,0 @@
-# kenttesozhakki.github.io
