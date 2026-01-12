@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Öneri Paylaş • Genç Katılım</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Logo">
+      <div>
+        <b>İzmir Kent Konseyi</b><br>
+        <small>Genç Katılım Platformu</small>
+      </div>
+    </a>
+
+    <nav class="menu">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="councils.html">Meclisler</a>
+      <a href="groups.html">Çalışma Grupları</a>
+      <a href="about.html">Hakkımızda</a>
+      <a class="active" href="suggestions.html">Öneriler</a>
+      <a href="quiz.html">Test</a>
+      <a href="profile.html">Profil</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn" href="suggestions.html">Önerilere dön</a>
+    </div>
+  </div>
+</header>
+
+<main class="page container">
+
+  <section class="pagehead">
+    <h1>Öneri Paylaş</h1>
+    <p>İzmir için bir fikir öner. Kısa ve net yaz: sorun nedir, çözümün ne, neden önemli?</p>
+  </section>
+
+  <section class="grid2">
+
+    <!-- FORM -->
+    <section class="card">
+      <h2 style="font-family:'Archivo Black', Inter, sans-serif; font-size:20px; margin-bottom:10px">
+        Öneri Formu
+      </h2>
+      <p style="opacity:.75; font-weight:600; line-height:1.6">
+        Başlık, kategori ve kısa açıklama ekleyerek önerini gönderebilirsin.
+      </p>
+
+      <!-- ✅ SABİT ID'LER: app.js bunlara bağlı -->
+      <form id="suggestionForm" class="form">
+        <div>
+          <label style="display:block; font-weight:800; opacity:.75; margin-bottom:8px">Başlık</label>
+          <input id="sgTitle" class="input" name="title" placeholder="Örn: Parklarda aydınlatma artırılsın"/>
+        </div>
+
+        <div>
+          <label style="display:block; font-weight:800; opacity:.75; margin-bottom:8px">Kategori</label>
+          <select id="sgCategory" class="select" name="category">
+            <option value="">Seç</option>
+            <option>Ulaşım</option>
+            <option>Çevre</option>
+            <option>Gençlik</option>
+            <option>Engelsiz Yaşam</option>
+            <option>Kültür & Sanat</option>
+            <option>Eğitim</option>
+            <option>Sosyal Gelişim</option>
+            <option>Sağlık</option>
+            <option>Ekonomi</option>
+          </select>
+        </div>
+
+        <div>
+          <label style="display:block; font-weight:800; opacity:.75; margin-bottom:8px">Öneri detayı</label>
+          <textarea id="sgBody" class="textarea" name="body" placeholder="Sorun + çözüm + kısa gerekçe (max 5–6 cümle)"></textarea>
+        </div>
+
+        <div style="display:flex; gap:10px; justify-content:flex-end; flex-wrap:wrap; margin-top:6px">
+          <a class="btn" href="suggestions.html">Vazgeç</a>
+          <button class="btn primary" type="submit">Gönder</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- İPUÇLARI -->
+    <aside class="card">
+      <h2 style="font-family:'Archivo Black', Inter, sans-serif; font-size:20px; margin-bottom:10px">
+        İyi bir öneri nasıl yazılır?
+      </h2>
+
+      <div class="list">
+        <div class="item">
+          <span class="badge">1</span>
+          <h3 style="margin-top:10px">Sorunu net söyle</h3>
+          <p style="margin-top:8px; opacity:.8; font-weight:600; line-height:1.6">
+            Nerede, ne zaman, kimleri etkiliyor? Tek cümlede özetle.
+          </p>
+        </div>
+
+        <div class="item">
+          <span class="badge">2</span>
+          <h3 style="margin-top:10px">Çözüm önerini yaz</h3>
+          <p style="margin-top:8px; opacity:.8; font-weight:600; line-height:1.6">
+            Uygulanabilir öneri ver: “şu sayı”, “şu bölge”, “şu yöntem” gibi.
+          </p>
+        </div>
+
+        <div class="item">
+          <span class="badge">3</span>
+          <h3 style="margin-top:10px">Neden önemli?</h3>
+          <p style="margin-top:8px; opacity:.8; font-weight:600; line-height:1.6">
+            Güvenlik, erişilebilirlik, çevre, sosyal fayda gibi gerekçe ekle.
+          </p>
+        </div>
+      </div>
+    </aside>
+
+  </section>
+</main>
+
+<!-- ✅ app.js burada çalışacak -->
+<script src="js/app.js"></script>
+</body>
+</html>
